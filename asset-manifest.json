@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/profile-app/static/css/main.6fffc5e9.css",
+    "main.css": "/profile-app/static/css/main.24e0b114.css",
     "main.js": "/profile-app/static/js/main.a934e691.js",
     "static/js/787.33989380.chunk.js": "/profile-app/static/js/787.33989380.chunk.js",
     "static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.mp4": "/profile-app/static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.64bd0a6367fd0b627778.mp4",
-    "static/media/starry-sky-stars-night-1187315-wallhere.com.jpg": "/profile-app/static/media/starry-sky-stars-night-1187315-wallhere.com.8cb804f226977f097dd1.jpg",
     "static/media/snowy-blue-mountains-4k-e5.jpg": "/profile-app/static/media/snowy-blue-mountains-4k-e5.a920cd7b9d14ce2a43ed.jpg",
     "static/media/clouds-cloudscape-daylight-432901.jpg": "/profile-app/static/media/clouds-cloudscape-daylight-432901.23e32cad2a80ea5139be.jpg",
     "static/media/Ghandruk-Nepal-night-sky-night-sky-landscape-1577971-wallhere.com.jpg": "/profile-app/static/media/Ghandruk-Nepal-night-sky-night-sky-landscape-1577971-wallhere.com.abf01a4aa509a7f755f5.jpg",
@@ -16,12 +15,12 @@
     "index.html": "/profile-app/index.html",
     "static/media/cpu-fill.svg": "/profile-app/static/media/cpu-fill.e9c86065dcba641d924d53a0ca231df0.svg",
     "static/media/linkedin.svg": "/profile-app/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
-    "main.6fffc5e9.css.map": "/profile-app/static/css/main.6fffc5e9.css.map",
+    "main.24e0b114.css.map": "/profile-app/static/css/main.24e0b114.css.map",
     "main.a934e691.js.map": "/profile-app/static/js/main.a934e691.js.map",
     "787.33989380.chunk.js.map": "/profile-app/static/js/787.33989380.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fffc5e9.css",
+    "static/css/main.24e0b114.css",
     "static/js/main.a934e691.js"
   ]
 }
