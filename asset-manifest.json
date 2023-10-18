@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile-app/static/css/main.72c1e464.css",
-    "main.js": "/profile-app/static/js/main.8ac8dc0a.js",
+    "main.js": "/profile-app/static/js/main.a934e691.js",
     "static/js/787.33989380.chunk.js": "/profile-app/static/js/787.33989380.chunk.js",
     "static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.mp4": "/profile-app/static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.64bd0a6367fd0b627778.mp4",
     "static/media/starry-sky-stars-night-1187315-wallhere.com.jpg": "/profile-app/static/media/starry-sky-stars-night-1187315-wallhere.com.8cb804f226977f097dd1.jpg",
@@ -12,17 +12,16 @@
     "static/media/Profilepic.png": "/profile-app/static/media/Profilepic.c72b111de3ae6599b875.png",
     "static/media/failinggrade.jpg": "/profile-app/static/media/failinggrade.82e9513c9f624136dcdb.jpg",
     "static/media/ProfilePicture.png": "/profile-app/static/media/ProfilePicture.819f5df845705f7bfd64.png",
-    "static/media/logo.svg": "/profile-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/envelope-at.svg": "/profile-app/static/media/envelope-at.5ceff8a04c8c710d850f7f9712ec905f.svg",
     "index.html": "/profile-app/index.html",
     "static/media/cpu-fill.svg": "/profile-app/static/media/cpu-fill.e9c86065dcba641d924d53a0ca231df0.svg",
     "static/media/linkedin.svg": "/profile-app/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
     "main.72c1e464.css.map": "/profile-app/static/css/main.72c1e464.css.map",
-    "main.8ac8dc0a.js.map": "/profile-app/static/js/main.8ac8dc0a.js.map",
+    "main.a934e691.js.map": "/profile-app/static/js/main.a934e691.js.map",
     "787.33989380.chunk.js.map": "/profile-app/static/js/787.33989380.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72c1e464.css",
-    "static/js/main.8ac8dc0a.js"
+    "static/js/main.a934e691.js"
   ]
 }
