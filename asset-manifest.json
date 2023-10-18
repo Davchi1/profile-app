@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/profile-app/static/css/main.6fffc5e9.css",
+    "main.css": "/profile-app/static/css/main.72c1e464.css",
     "main.js": "/profile-app/static/js/main.a934e691.js",
     "static/js/787.33989380.chunk.js": "/profile-app/static/js/787.33989380.chunk.js",
     "static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.mp4": "/profile-app/static/media/4K Planet Earth Spinning in Space Free HD Videos - No Copyright.64bd0a6367fd0b627778.mp4",
@@ -16,12 +16,12 @@
     "index.html": "/profile-app/index.html",
     "static/media/cpu-fill.svg": "/profile-app/static/media/cpu-fill.e9c86065dcba641d924d53a0ca231df0.svg",
     "static/media/linkedin.svg": "/profile-app/static/media/linkedin.2eda7bddaacee15c44494bb63ca94165.svg",
-    "main.6fffc5e9.css.map": "/profile-app/static/css/main.6fffc5e9.css.map",
+    "main.72c1e464.css.map": "/profile-app/static/css/main.72c1e464.css.map",
     "main.a934e691.js.map": "/profile-app/static/js/main.a934e691.js.map",
     "787.33989380.chunk.js.map": "/profile-app/static/js/787.33989380.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fffc5e9.css",
+    "static/css/main.72c1e464.css",
     "static/js/main.a934e691.js"
   ]
 }
