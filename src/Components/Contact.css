@@ -1,0 +1,125 @@
+/* Inherit global styles */
+
+.contact-container {
+    padding: 2rem 0; /* Reduced padding */
+    background-color: transparent; /* Make transparent */
+    display: flex;
+    align-items: center; /* Re-center content vertically */
+    justify-content: center; /* Center horizontally */
+    width: 100%; /* Ensure it takes full width */
+    flex-grow: 1; /* Allow container to grow */
+}
+
+.contact-content {
+    max-width: 700px; /* Max width for content */
+    width: 100%;
+    margin: 0 auto; /* Ensure horizontal centering */
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.contact-content h2 {
+    color: var(--text-primary);
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem; /* Increased margin */
+    text-align: left; /* Align left */
+    position: relative;
+    padding-left: 1.5rem; /* Space for the line */
+    padding-bottom: 0.5rem;
+    display: inline-block; /* Keep for potentially shorter titles */
+}
+
+.contact-content h2::before { /* Use ::before for side line */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px; /* Adjust vertical position */
+    bottom: 5px;
+    width: 4px;
+    background: var(--accent-blue);
+    box-shadow: 0 0 10px var(--accent-glow);
+    border-radius: 2px;
+}
+
+.contact-content h2::after { /* Remove bottom underline */
+    display: none;
+}
+
+/* .contact-card inherits .card styles from App.css */
+.contact-card {
+    padding: 2.5rem; /* Adjust padding if needed */
+}
+
+.contact-intro {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between methods */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between icon and text */
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.linkedin-icon {
+    filter: grayscale(100%) brightness(1.5); /* Match navbar style */
+}
+
+.email-icon {
+    font-size: 1.8rem; /* Adjust size for emoji */
+    line-height: 1;
+}
+
+.contact-link {
+    color: var(--text-primary); /* Slightly brighter link text */
+    font-size: 1.1rem;
+    font-weight: 500;
+    /* Inherits hover effect from global 'a:hover' */
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem 0;
+        align-items: flex-start; /* Align top on mobile */
+    }
+    .contact-content {
+        padding: 0 1rem;
+    }
+    .contact-content h2 {
+        font-size: 1.8rem;
+    }
+    .contact-card {
+        padding: 2rem;
+    }
+    .contact-intro {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .contact-methods {
+      gap: 1.5rem;
+    }
+    .contact-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .email-icon {
+      font-size: 1.5rem;
+    }
+    .contact-link {
+      font-size: 1rem;
+    }
+} 

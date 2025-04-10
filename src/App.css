@@ -1,11 +1,193 @@
-a.active {
-    background-color: red;
+/* Keep the Poppins font import if not already in index.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
+/* Remove .App background color as particles handle it */
+/*.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+}*/
+
+.main-content {
+  width: 100%;
+  background-color: transparent;
+  padding-top: 80px;
+}
+
+/* Global Styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --light-text: #6c757d;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* General heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8rem; /* Larger H1 */
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+/* General link styles */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-blue);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* General button styles */
+button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--accent-blue);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--accent-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-blue);
+  color: var(--primary-bg);
+  box-shadow: 0 0 15px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 5px var(--accent-glow);
+}
+
+/* Container class */
+.container {
+  max-width: 1100px; /* Slightly narrower */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text-color);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 1rem auto;
+}
+
+/* General card styling */
+.card {
+  background-color: rgba(30, 41, 59, 0.6); /* More transparency */
+  backdrop-filter: blur(10px); /* Stronger blur */
+  border-radius: 12px; /* Softer corners */
+  padding: 2rem;
+  border: 1px solid rgba(51, 65, 85, 0.6); /* Slightly more visible border */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glow effect on hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: rgba(30, 41, 59, 0.7);
+}
+
+/* Optional: Add a subtle border highlight */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: inherit; /* Match parent border-radius */
+    border: 1px solid transparent;
+    pointer-events: none; /* Allow clicks through */
+    transition: border-color 0.3s ease;
+}
+
+.card:hover::before {
+    border-color: rgba(56, 189, 248, 0.3); /* Accent glow border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px; /* Matches mobile Navigation height */
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  .section {
+    padding: 3rem 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+a.active {
+    background-color: transparent;
     border-radius: 2px;
     text-decoration: underline;
     text-underline-offset: 10px;
     font-style: italic;
-
+    color: #00d2ff;
 }
 
 .ProjectCarousel {
@@ -14,132 +196,140 @@ a.active {
     height: 600px;
     text-decoration: none;
     color: white;
-    background-color: rgb(229, 9, 20);
+    background: rgba(0, 210, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 210, 255, 0.2);
 }
 
 #carouselBorder {
-    border-radius: 2px;
+    border-radius: 12px;
 }
 
 #carouselLinks {
-    color: white;
+    color: #00d2ff;
 }
 
 #IntroText {
     color: white;
     animation: fade 3000ms ease-in;
     white-space: nowrap;
-    font-size: medium;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
 }
 
 #profilePictureHolder {
     animation: fade 7000ms ease-in;
-
     border-radius: 50%;
+    border: 2px solid rgba(0, 210, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
 }
 
 #IntroName {
     color: white;
-    font-size: small;
+    font-size: 1.5rem;
     animation: fade 7000ms ease-in;
     white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
 }
 
 #IntroBio {
     color: white;
-    font-size: 10px;
+    font-size: 1rem;
     animation: fade 3000ms ease-in;
     object-fit: contain;
     margin: 0px 20px 0px 20px;
     text-align: center;
-
-
+    line-height: 1.6;
 }
 
 #IntroBioContact {
     color: white;
-    font-size: 9px;
+    font-size: 1rem;
     object-fit: contain;
     padding-top: 40px;
     animation: fade 3000ms ease-in;
     margin: 20 auto;
     text-align: center;
-
-
+    line-height: 1.6;
 }
 
 .NavigationBrand {
-    font-size: large;
+    font-size: 1.5rem;
     color: white;
     margin-top: 15px;
     padding-right: 100px;
-    text-shadow: 10px 10px 10px black;
-    -webkit-text-fill-color: white;
-
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
 }
-
 
 #PasswordField {
     animation: fade 10000ms ease-in;
     outline: none;
     border-radius: 25px;
-    border-width: thin;
-    background-color: transparent;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     font-family: "monospace";
     color: white;
-
-
+    padding: 10px 20px;
+    backdrop-filter: blur(5px);
 }
 
-#LoginPageDetails {
-    align-content: center;
+#AuthPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
 #LoginFormPage {
     display: flex;
     flex-direction: column;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
     height: 300px;
     width: 200px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 210, 255, 0.2);
     align-items: center;
     margin: auto;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+    border-radius: 12px;
     margin-top: 50px;
 }
 
 #MainFormPage {
     display: flex;
     flex-direction: column;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.3);
     height: 600px;
     width: 450px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 210, 255, 0.2);
     align-items: center;
     margin: auto;
     backdrop-filter: blur(40px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+    border-radius: 12px;
     margin-top: 50px;
     margin-bottom: 40px;
 }
 
 #navItems {
     padding-top: 15px;
-    text-shadow: 10px 10px 10px black;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
     text-decoration: none;
     color: white;
 }
 
 .NavigationLinks {
-    font-size: small;
+    font-size: 1rem;
     color: inherit;
     text-decoration: none;
-    --bs-nav-link-hover-color: white;
+    transition: color 0.3s ease;
+}
+
+.NavigationLinks:hover {
+    color: #00d2ff;
 }
 
 #linkedinImage {
@@ -148,43 +338,43 @@ a.active {
 }
 
 #mainNavigation {
-    background: rgb(229, 9, 20);
-    font-size: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
     color: white;
     padding-bottom: 5px;
     display: flex;
-    height: 55px;
-    box-shadow: 0 0 10px rgb(299, 9, 40);
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 210, 255, 0.2);
 }
 
 #MailIcon {
     margin-right: 10px;
-
 }
 
 #MainFooter {
-    background: rgb(229, 9, 20);
-
-    font-size: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
     list-style: none;
-    box-shadow: 0 0 10px rgb(299, 9, 40);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
     text-align: center;
     align-items: center;
     margin: auto;
     padding-bottom: 10px;
     padding-top: 20px;
     color: white;
-
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 210, 255, 0.2);
 }
 
 #FooterText {
     animation: fade 9000ms ease-in;
-    font-size: 10px;
+    font-size: 1rem;
     font-family: "Segoe Script";
-
 }
 
 #MainPageBackGround {
@@ -197,10 +387,9 @@ a.active {
 }
 
 #SuccesfulLoginDiv {
-    background-image: url("Components/starry-sky-stars-night-1187315-wallhere.com.jpg");
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .videoBackground {
@@ -210,7 +399,6 @@ a.active {
     top: 0;
     z-index: -1;
     object-fit: cover;
-
 }
 
 .mainPageBackGround {

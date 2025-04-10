@@ -1,0 +1,169 @@
+/* Inherit global styles */
+
+.experience-container {
+    padding: 2rem 0; /* Reduced padding */
+    background-color: transparent; /* Make transparent */
+    width: 100%;
+    /* Remove min-height */
+    /* min-height: calc(100vh - 80px - 70px); */
+}
+
+.experience-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto; /* Ensure horizontal centering */
+    padding: 0 1.5rem;
+}
+
+.experience-section, .education-section, .skills-section {
+    margin-bottom: 4rem;
+}
+
+/* Section Title Styling */
+.experience-section h2,
+.education-section h2,
+.skills-section h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem; /* Increased margin */
+    text-align: left; /* Align left */
+    position: relative;
+    padding-left: 1.5rem; /* Space for the line */
+    padding-bottom: 0.5rem;
+    /* Remove centered bottom line */
+}
+
+.experience-section h2::before, /* Use ::before for side line */
+.education-section h2::before,
+.skills-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px; /* Adjust vertical position */
+    bottom: 5px;
+    width: 4px;
+    background: var(--accent-blue);
+    box-shadow: 0 0 10px var(--accent-glow);
+    border-radius: 2px;
+}
+
+.experience-section h2::after, /* Remove bottom underline */
+.education-section h2::after,
+.skills-section h2::after {
+    display: none;
+}
+
+/* Use general .card styles from App.css */
+.experience-card,
+.education-card,
+.skills-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific overrides if needed */
+.education-card h3 {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.8rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.job:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.job h3 {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.job-title {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.job-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.job ul,
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job ul li,
+.skill-category ul li {
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.job ul li::before,
+.skill-category ul li::before {
+    content: '▹'; /* Use a different bullet */
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category h4 {
+    color: var(--accent-blue);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 2rem 0;
+    }
+    .experience-content {
+        padding: 0 1rem;
+    }
+    .experience-section h2,
+    .education-section h2,
+    .skills-section h2 {
+        font-size: 1.8rem;
+    }
+    .experience-card,
+    .education-card,
+    .skills-card {
+        padding: 1.5rem;
+    }
+    .job h3, .education-card h3 {
+      font-size: 1.4rem;
+    }
+    .job ul li, .skill-category ul li {
+      font-size: 0.95rem;
+      padding-left: 1.2rem;
+    }
+} 

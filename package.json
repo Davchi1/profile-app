@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Davchi1.github.io./profile-app-react",
   "name": "profile-app-react",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +6,13 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/all": "^3.8.1",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/preset-links": "^3.2.0",
+    "@tsparticles/preset-stars": "^3.2.0",
+    "@tsparticles/react": "^3.0.0",
     "bootstrap": "^5.3.2",
+    "framer-motion": "^12.6.3",
     "git": "^0.1.5",
     "mdb-react-ui-kit": "^6.3.0",
     "react": "^18.2.0",
@@ -28,7 +33,6 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": [

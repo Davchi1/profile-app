@@ -1,72 +1,157 @@
-import React, {useState} from 'react';
-import LoginPageDetails from "./LoginPageDetails";
-import samplePicture from "./linkedin.svg"
-import nameStyler from "./cpu-fill.svg"
-import MainPageBackground from "./snowy-blue-mountains-4k-e5.jpg"
-import ProfilePicture from "./Profilepic.png";
-import MailIcon from "./envelope-at.svg"
-import Nav from 'react-bootstrap/Nav'
-import {Link} from "react-router-dom"
-import {Container, Navbar} from "react-bootstrap";
-import {NavLink} from "react-router-dom";
-import linkedinImage from "./linkedin.svg";
-function Experience(){
+import React from 'react';
+import { motion } from 'framer-motion';
+import './Experience.css';
 
-    const navBarOptions = [<NavLink to = "/Experience" className={"NavigationLinks"}   >Experience</NavLink>, <NavLink to = "/Projects" className={"NavigationLinks"}  >Projects</NavLink>,<NavLink to = "/WhyNetflix" className={"NavigationLinks"} > Why Netflix?</NavLink> ]
+// Simple variant for cards appearing on scroll
+const cardFadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { 
+            duration: 0.6, 
+            ease: "easeOut"
+        }
+    }
+};
 
-    return(
+function Experience() {
+    return (
+        <div className="experience-container">
+            <div className="experience-content">
+                <section className="education-section">
+                    <h2>Education</h2>
+                    <motion.div 
+                        className="education-card card" 
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={cardFadeInUp}
+                    >
+                        <h3>Rutgers University</h3>
+                        <div className="skills-grid">
+                            <div className="skill-category">
+                                <h4>Core Computer Science</h4>
+                                <ul>
+                                    <li>Data Structures</li>
+                                    <li>Computer Security</li>
+                                    <li>Software Methodology</li>
+                                    <li>Systems Programming</li>
+                                    <li>Computer Architecture</li>
+                                    <li>Algorithm Design & Analysis</li>
+                                </ul>
+                            </div>
+                            <div className="skill-category">
+                                <h4>Mathematics & Theory</h4>
+                                <ul>
+                                    <li>Calculus I & II</li>
+                                    <li>Discrete Mathematics I & II</li>
+                                    <li>Linear Algebra</li>
+                                    <li>Physics I & II</li>
+                                </ul>
+                            </div>
+                            <div className="skill-category">
+                                <h4>Data & Web Technologies</h4>
+                                <ul>
+                                    <li>Internet Technology</li>
+                                    <li>Information & Data Management</li>
+                                    <li>Database Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </motion.div>
+                </section>
 
-        <div id = {"SuccesfulLoginDiv"} >
-            <Navbar id={"mainNavigation"}>
-                    <Navbar.Brand className={"NavigationBrand"} href="/Profile">David Okechukwu</Navbar.Brand>
+                <section className="experience-section">
+                    <h2>Professional Experience</h2>
+                    <motion.div 
+                        className="experience-card card"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={cardFadeInUp}
+                    >
+                        <div className="job">
+                            <h3>Stealth Startup</h3>
+                            <p className="job-title">Software Engineer - Remote</p>
+                            <p className="job-date">June 2024–Present</p>
+                            <ul>
+                                <li>Involved in the full-stack development, from back-end in PostgreSQL to UI/UX & business logic on the application using Kotlin & Swift/Swift UI</li>
+                                <li>Leading the end-to-end development of new features, from ideation to version 1</li>
+                                <li>Assisting in defining and implementing best practices, processes, and tools for software development and deployment</li>
+                                <li>Testing and debugging applications to ensure they function optimally</li>
+                                <li>Assist in the strategy & planning the product roadmap</li>
+                                <li>Identifying areas for implementation of Machine Learning/AI Optimizations and training models</li>
+                            </ul>
+                        </div>
+                        <div className="job">
+                            <h3>Twitter (X)</h3>
+                            <p className="job-title">Software Engineer - Media Foundation Team</p>
+                            <ul>
+                                <li>Developed video playback speed options for Twitter For Android (TFA)</li>
+                                <li>Gained strong fundamentals in media playback technologies</li>
+                                <li>Worked on core media infrastructure improvements</li>
+                            </ul>
+                        </div>
+                        <div className="job">
+                            <h3>Yahoo!</h3>
+                            <p className="job-title">Software Engineer - Fantasy Sports</p>
+                            <ul>
+                                <li>Developed and maintained the Fantasy Android application</li>
+                                <li>Implemented new features and optimizations</li>
+                                <li>Collaborated with cross-functional teams</li>
+                            </ul>
+                        </div>
+                    </motion.div>
+                </section>
 
-                    {navBarOptions.map((item) =>(
-                        <li id = {"navItems"} > {item}</li>
-                    ))}
-                    <a target="_blank" id = {"linkedinImage"} href = {"https://www.linkedin.com/in/david-okechukwu-6a1599172/" }>
-                        <img src ={linkedinImage} alt={""}/>
-                    </a>
-            </Navbar>
-            <form id = {"MainFormPage"}>
-
-
-                <h2 id = {"IntroBioContact"}>
-                    At Rutgers University I gained knowledge in the following CS topics:
-                    <br />
-                    CALCULUS 1| CALCULUS 2|COMPUTER SECURITY|DATA STRUCTURES|DESIGN AND ANALYSIS OF COMPUTER ALGORITHMS|INTERNET TECHNOLOGY|INTRODUCTION TO COMPUTER ARCHITECTURE|INTRODUCTION TO COMPUTER SCIENCE|DISCRETE MATH 1|DISCRETE MATH 2|LINEAR ALGEBRA 1| PHYSICS 1|PHYSICS 2|SOFTWARE METHODOLOGY|SYSTEMS PROGRAMMING|PRINCIPLES OF INFORMATION & DATA MANAGEMENT
-                    <br />
-                    <br />
-                    <br />
-                    Twitter: Working on the media foundation team, I gained strong fundamentals on media playback topcis and developed video playback speed options for the (TFA) Twitter For Android application
-                    <br/>
-                    <br />
-                    <br />
-                    Yahoo!: Worked on development and maintenance for the Fantasy android application
-                    <br/>
-                    <br />
-                    <br />
-                    <br />
-                    I am proficient the the following Languages/Tools/Processes/Frameworks:
-                    <br/>
-                    Java | JUnit testing | C | C++ | Python | Kotlin | SQL | GIT | React | HTML | CSS | Dagger | Rx Java | Coroutines | Eclipse IntelliJ |Jira | Agile Development
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    okechukwu15@gmail.com
-                    <br/>
-                    <br/>
-                    <h9>Greater New York Area</h9>
-
-                </h2>
-            </form>
-            <ul id = {"MainFooter"}>
-                <li id ={"FooterText"} >It always seems impossible until its done - Nelson Mandela</li>
-            </ul>
+                <section className="skills-section">
+                    <h2>Technical Skills</h2>
+                    <motion.div 
+                        className="skills-card card"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.2 }}
+                        variants={cardFadeInUp}
+                    >
+                        <div className="skills-grid">
+                            <div className="skill-category">
+                                <h4>Programming Languages</h4>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>Kotlin</li>
+                                    <li>Python</li>
+                                    <li>C/C++</li>
+                                    <li>SQL</li>
+                                    <li>Swift</li>
+                                </ul>
+                            </div>
+                            <div className="skill-category">
+                                <h4>Frameworks & Tools</h4>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Dagger</li>
+                                    <li>RxJava</li>
+                                    <li>Coroutines</li>
+                                    <li>JUnit</li>
+                                </ul>
+                            </div>
+                            <div className="skill-category">
+                                <h4>Development Tools</h4>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>IntelliJ</li>
+                                    <li>Eclipse</li>
+                                    <li>Jira</li>
+                                    <li>Agile Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </motion.div>
+                </section>
+            </div>
         </div>
-
     );
 }
-
 
 export default Experience;
