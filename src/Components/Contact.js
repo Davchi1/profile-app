@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion
-import { Link } from 'react-router-dom'; // If using React Router links
+// import { Link } from 'react-router-dom'; // Remove unused import
 import linkedinIcon from './linkedin.svg'; // Assuming it's still in Components
 import './Contact.css';
 
