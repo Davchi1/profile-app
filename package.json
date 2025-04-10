@@ -1,6 +1,7 @@
 {
   "name": "profile-app-react",
   "version": "0.1.0",
+  "homepage": "https://davchi1.github.io/profile-app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
