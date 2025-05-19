@@ -1,3 +1,4 @@
 # profile-app
 
-Password is Password123
+GH Pages deployment: https://davchi1.github.io/profile-app/
+Password: Password123
